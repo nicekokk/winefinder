@@ -116,6 +116,10 @@
                                         <li>#이탈리아</li>
                                         <li>#내츄럴</li>
                                     </ul>
+                                     <div class="pricebox">
+                                        <p class="before_p">999,000원</p>
+                                        <strong class="price">333,000원</strong>
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -136,10 +140,7 @@
                                         <li>#이탈리아</li>
                                         <li>#내츄럴</li>
                                     </ul>
-                                    <div class="pricebox">
-                                        <p class="before_p">999,000원</p>
-                                        <strong class="price">333,000원</strong>
-                                    </div>
+                                   
                                 </div>
                             </a>
                         </li>
@@ -171,6 +172,7 @@
         });
 
         function changeListType(event) {
+            console.log('1');
             event.preventDefault();
             event.target.classList.toggle('block');
             document.querySelector('.wine-list').classList.toggle('block');
