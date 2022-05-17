@@ -507,7 +507,7 @@ a, button {
   display: flex;
 }
 
- .image {
+.wine-list.block .image {
   position: static;
   border-width: 2px 0 2px 2px;
 }
@@ -537,29 +537,6 @@ a, button {
 .wine-list.block .details .group {
   margin-top: 22px;
 }
-
-.wine-list .pricebox{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  background: #fff;
-  align-items: baseline;
-  margin-top: 30px;
-}
-
-.wine-list .details .pricebox .price {
-  font-size: 17px;
-  color: #000;
-  font-weight: 700;
-}
-
-.wine-list .details .pricebox .before_p{
-  font-size: 9px;
-  color: #c62026;
-  text-decoration: line-through;
-  margin-right: 5px;
-}
-
 
 .f-radio + label, .f-chk + label {
   cursor: pointer;
@@ -753,7 +730,6 @@ a, button {
 }
 
 .p-detail .details {
-  position: relative;
   padding-top: 20px;
   padding-left: 12px;
   padding-right: 12px;
@@ -761,11 +737,9 @@ a, button {
 }
 
 .p-detail .details .name {
-  display: block;
   font-size: 20px;
   color: #000;
   font-weight: 700;
-  max-width: 85%;
 }
 
 .p-detail .details .group {
@@ -780,14 +754,17 @@ a, button {
 }
 
 .p-detail .details .area {
-  position: absolute;
-  top: 7px;
-  right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 3px 0 8px;
+  border-bottom: 5px solid #c62026;
 }
 
 .p-detail .details .area h3 {
@@ -797,6 +774,7 @@ a, button {
 }
 
 .p-detail .details .area .location {
+  margin-left: 6px;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -805,38 +783,10 @@ a, button {
   font-weight: 700;
   text-align: center;
   background-color: #c62026;
-  margin-top: 5px;
 }
-
-.details .pricebox{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  background: #fff;
-  align-items: baseline;
-  margin-top: 30px;
-}
-
-.details .pricebox .price {
-  font-size: 25px;
-  color: #000;
-  font-weight: 700;
-}
-
-.details .pricebox .before_p{
-  font-size: 15px;
-  font-weight: 600;
-  color: #c62026;
-  text-decoration: line-through;
-  margin-right: 5px;
-}
-
-
 
 .p-detail .details .description {
-  border-top: 5px solid #c62026;
   padding: 13px 0 0;
-  margin-top: 20px;
 }
 
 .p-detail .details .description h3 {
