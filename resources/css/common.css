@@ -538,6 +538,28 @@ a, button {
   margin-top: 22px;
 }
 
+.wine-list .pricebox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: #fff;
+    align-items: baseline;
+    margin-top: 30px;
+  }
+  
+  .wine-list .details .pricebox .price {
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .wine-list .details .pricebox .before_p{
+    font-size: 9px;
+    color: #c62026;
+    text-decoration: line-through;
+    margin-right: 5px;
+  }
+
 .f-radio + label, .f-chk + label {
   cursor: pointer;
 }
